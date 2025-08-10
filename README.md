@@ -11,23 +11,24 @@ This project was built as part of a shell scripting assignment to automate the c
 After running the setup script, your directory will look like this:
 
 ```
-
-submission\_reminder\_{YourName}/
-│── config.env          # App configuration settings
-│── reminder.sh         # Main reminder script
-│── functions.sh        # Functions for deadline checking
-│── submissions.txt     # Student submission records
-│── startup.sh          # Starts the reminder application
-│── image.png           # Placeholder image file
-
-````
+submission_reminder_<name>/
+├── app/
+│   └── reminder.sh             # Main reminder logic
+├── assets/
+│   └── submissions.txt         # Student submission records
+├── config/
+│   └── config.env              # Application configuration
+├── modules/
+│   └── functions.sh            # Helper functions
+└── startup.sh                  # Application startup script
+```
 
 ---
 
 ##  How to Run the Application
 
 ### 1 Clone the Repository
-```bash
+```
 git clone https://github.com/kevin-azb/submission_reminder_app_kevin-azb.git
 cd submission_reminder_app_kevin-azb
 ````
@@ -37,7 +38,7 @@ cd submission_reminder_app_kevin-azb
 
 Run the setup script and enter your name when prompted:
 
-```bash
+```
 ./create_environment.sh
 ```
 
@@ -51,7 +52,7 @@ submission_reminder_{YourName}
 
 Navigate to your app folder and run:
 
-```bash
+```
 cd submission_reminder_{YourName}
 ./startup.sh
 ```
@@ -67,7 +68,6 @@ cd submission_reminder_{YourName}
 | **functions.sh**    | Contains reusable functions for the app (e.g., deadline checking).             |
 | **submissions.txt** | Records of students, their assignments, due dates, and submission status.      |
 | **startup.sh**      | Launches the reminder script automatically.                                    |
-| **image.png**       | Placeholder image (for demonstration purposes).                                |
 
 ---
 
@@ -77,7 +77,7 @@ You can edit `submissions.txt` to add or modify student records.
 Format:
 
 ```
-Student Name,Assignment Title,status
+student,assignment,submission status
 ```
 
 * **status**: `not submitted` or `submitted`.
@@ -93,7 +93,7 @@ Kevin,Science Project,submitted
 ## Author 
 
 ```
-Developed by **Kevin IKuzwe** as part of a Linux shell scripting assignment.
+Developed by Kevin IKuzwe as part of a Linux shell scripting assignment.
 
 ```
 
