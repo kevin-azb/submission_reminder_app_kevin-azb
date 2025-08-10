@@ -52,7 +52,7 @@ EOF
 
 chmod +x modules/functions.sh
 
-cat << EOF > assets/submissions.txt
+cat << 'EOF' > assets/submissions.txt
 student, assignment, submission status
 Chinemerem, Shell Navigation, not submitted
 Chiagoziem, Git, submitted
@@ -65,13 +65,13 @@ Grace, shell basics, not submitted
 kessy, signals and processes, submitted
 EOF
 
-cat << EOF > config/config.env
+cat << 'EOF' > config/config.env
 # This is the config file
 ASSIGNMENT="Shell Navigation"
 DAYS_REMAINING=2
 EOF
 
-cat << EOF > startup.sh
+cat << 'EOF' > startup.sh
 #!/bin/bash
 bash app/reminder.sh
 EOF
