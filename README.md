@@ -27,14 +27,14 @@ submission_reminder_<name>/
 
 ##  How to Run the Application
 
-### 1 Clone the Repository
+### 1. Clone the Repository
 ```
 git clone https://github.com/kevin-azb/submission_reminder_app_kevin-azb.git
 cd submission_reminder_app_kevin-azb
 ````
 
 
-### 3 Create the Environment
+### 2. Create the Environment
 
 Run the setup script and enter your name when prompted:
 
@@ -48,7 +48,7 @@ This will generate a folder named:
 submission_reminder_{YourName}
 ```
 
-### 4 Start the Application
+### 3. Start the Application
 
 Navigate to your app folder and run:
 
